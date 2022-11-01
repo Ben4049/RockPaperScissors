@@ -1,0 +1,101 @@
+<html>
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="index.css">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+  
+  <div class = "all" id = "All">
+    <div class = "top_box">
+    <img src = './images/logo.svg' id ="title">
+      <div class = "score">
+        <div class ="inside_score">
+          <a id = "score_title"> SCORE</a>
+          <a id = "score_counter"> 0 </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class = "game" id = "Game">  
+      <div class = "rules_image" id = "rules_image" >
+        <div class ="top_rules">
+          <a id = "Rules_top">RULES:</a>
+        </div>
+        <img src="./images/image-rules.svg" width="80%" height="90%">
+      </div>
+      <div class ="top_row">
+        <div class ="circle" id = "paper" onClick ="Game(1)">
+          <div class ="middle">
+            <div class = "symbol">
+              <img src="./images/icon-paper.svg" height="75%" width="75%">
+            </div>
+          </div>
+        </div>
+        <div class ="circle" id = "scissors" onClick ="Game(2)">
+          <div class ="middle">
+            <div class = "symbol">
+              <img src="./images/icon-scissors.svg" height="75%" width="75%">
+            </div>
+          </div>
+        </div>
+      </div> 
+      <div class = "bottom_row">
+        <div class ="circle" id = "rock" onClick ="Game(0)">
+          <div class ="middle">
+            <div class = "symbol">
+              <img src="./images/icon-rock.svg" height="75%" width="75%">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class ="result" id = "result">
+      <div class ="box" id = "left">
+        <a>Player Choice</a>
+        <div class ="circle2" id = "PCircle">
+          <div class ="middle">
+            <div class="symbol" id = "Big_Image">
+              <img src = "" id="Image">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Middle_Box" id = "Middle_Box">
+        <a id = "You_Win">You ...</a>
+        <div class = "Play_again" onClick = "Playagain()">Play Again</div>
+      </div>
+      <div class ="box" id = "right">
+        <a> Computer Choice</a>
+        <div class ="circle2" id = "CCircle">
+          <div class ="middle">
+            <div class="symbol" id = "Big_Image" >
+              <img src = "" id="Image2">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>    
+  </div>
+
+
+
+
+  <div class = "Bottom_bar">
+    <div class = "Rules" onClick = "Rule()" id = "Bottom_bar">
+      <div class = "rules_text"> Rules</div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="index.js"></script>
+  
+
+</body>
+
